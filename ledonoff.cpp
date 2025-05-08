@@ -1,16 +1,12 @@
-int redPin = 12;
+int ledPin = 13;
 
-void setup(){
-    pinMode(redPin,OUTPUT);
-    
-    
-    
+void setup() {
+  pinMode(ledPin, OUTPUT);
 }
 
-void loop(){
-    digitalWrite(redPin,HIGH);
-    delay(500);
-    digitalWrite(redPin,LOW);
-    delay(500);
-    
+void loop() {
+  digitalWrite(ledPin, HIGH);  // Turn LED ON
+  delay(1000);                 // Wait 1 second
+  digitalWrite(ledPin, LOW);   // Turn LED OFF
+  delay(1000);                 // Wait 1 second
 }
